@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 720px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  html .box .header, body .box .header {
+    width: 100%;
+    height: 50px !important;
+    line-height: 50px;
+  }
+  html .box .header p, body .box .header p {
+    height: 50px;
+    float: right;
+  }
+  html .box .header p span:nth-child(2), body .box .header p span:nth-child(2) {
+    margin-left: 30px;
+  }
+  html .box .container, body .box .container {
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 100%;
+  }
+  html .box .container .container-left, body .box .container .container-left {
+    width: 20% !important;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  html .box .container .container-left ul, body .box .container .container-left ul {
+    list-style: none;
+    width: 100%;
+  }
+  html .box .container .container-left ul li, body .box .container .container-left ul li {
+    width: 100%;
+    line-height: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  html .box .container .container-right, body .box .container .container-right {
+    width: 80% !important;
+    background-color: #f0f0f0;
+  }
+  html .box .container .container-right ul, body .box .container .container-right ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  html .box .container .container-right ul li, body .box .container .container-right ul li {
+    width: 23%;
+    height: 450px;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin: 1%;
+    box-sizing: border-box;
+  }
+  html .box .container .container-right ul li img, body .box .container .container-right ul li img {
+    width: 100%;
+  }
+  html .box .container .container-right ul li div, body .box .container .container-right ul li div {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 720px) and (min-width: 320px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  html .box .header, body .box .header {
+    width: 100%;
+    height: 50px !important;
+    line-height: 50px;
+  }
+  html .box .header p, body .box .header p {
+    height: 50px;
+    float: right;
+  }
+  html .box .header p span:nth-child(2), body .box .header p span:nth-child(2) {
+    margin-left: 30px;
+  }
+  html .box .container, body .box .container {
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 100%;
+  }
+  html .box .container .container-left, body .box .container .container-left {
+    width: 20% !important;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  html .box .container .container-left ul, body .box .container .container-left ul {
+    list-style: none;
+    width: 100%;
+  }
+  html .box .container .container-left ul li, body .box .container .container-left ul li {
+    width: 100%;
+    line-height: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  html .box .container .container-right, body .box .container .container-right {
+    width: 80% !important;
+    background-color: #f0f0f0;
+  }
+  html .box .container .container-right ul, body .box .container .container-right ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  html .box .container .container-right ul li, body .box .container .container-right ul li {
+    width: 30%;
+    height: 300px;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin: 1%;
+    box-sizing: border-box;
+  }
+  html .box .container .container-right ul li img, body .box .container .container-right ul li img {
+    width: 100%;
+  }
+  html .box .container .container-right ul li div, body .box .container .container-right ul li div {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  html .box .header, body .box .header {
+    width: 100%;
+    height: 50px !important;
+    line-height: 50px;
+  }
+  html .box .header p, body .box .header p {
+    height: 50px;
+    float: right;
+  }
+  html .box .header p span:nth-child(2), body .box .header p span:nth-child(2) {
+    margin-left: 30px;
+  }
+  html .box .container, body .box .container {
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 100%;
+  }
+  html .box .container .container-left, body .box .container .container-left {
+    display: none;
+  }
+  html .box .container .container-right, body .box .container .container-right {
+    width: 80% !important;
+    background-color: #f0f0f0;
+  }
+  html .box .container .container-right ul, body .box .container .container-right ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  html .box .container .container-right ul li, body .box .container .container-right ul li {
+    width: 45%;
+    height: 350px;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin: 1%;
+    box-sizing: border-box;
+  }
+  html .box .container .container-right ul li img, body .box .container .container-right ul li img {
+    width: 100%;
+  }
+  html .box .container .container-right ul li div, body .box .container .container-right ul li div {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  html .box .header, body .box .header {
+    width: 100%;
+    height: 50px !important;
+    line-height: 50px;
+  }
+  html .box .header p, body .box .header p {
+    height: 50px;
+    float: right;
+  }
+  html .box .header p span:nth-child(2), body .box .header p span:nth-child(2) {
+    margin-left: 30px;
+  }
+  html .box .container, body .box .container {
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 100%;
+  }
+  html .box .container .container-left, body .box .container .container-left {
+    display: none;
+  }
+  html .box .container .container-right, body .box .container .container-right {
+    width: 80% !important;
+    background-color: #f0f0f0;
+  }
+  html .box .container .container-right ul, body .box .container .container-right ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  html .box .container .container-right ul li, body .box .container .container-right ul li {
+    width: 80%;
+    height: 400px;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin: 1%;
+    box-sizing: border-box;
+  }
+  html .box .container .container-right ul li img, body .box .container .container-right ul li img {
+    width: 100%;
+  }
+  html .box .container .container-right ul li div, body .box .container .container-right ul li div {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

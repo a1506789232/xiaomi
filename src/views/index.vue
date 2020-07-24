@@ -99,7 +99,6 @@ export default {
       this.loading1 = true;
       setTimeout(() => {
         this.$axios(`/json/data${this.num}.json`).then(res => {
-          console.log(this.num);
           this.goodsList.push(...res.data.result.list);
           this.num++;
           this.loading = true;
@@ -107,7 +106,6 @@ export default {
         });
       }, 1000);
     }
-    
   },
   computed: {
     list() {
@@ -136,14 +134,4 @@ export default {
 </script>
 
 <style scoped>
-/* .box{
-  position: relative;
-} */
-/* .main{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
 </style>

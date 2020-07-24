@@ -51,6 +51,11 @@
     flex-wrap: wrap;
     list-style: none;
   }
+  html .box .container .container-right ul li:hover, body .box .container .container-right ul li:hover {
+    transition: all;
+    transform: scale(1.05);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  }
   html .box .container .container-right ul li, body .box .container .container-right ul li {
     width: 23%;
     height: 450px;

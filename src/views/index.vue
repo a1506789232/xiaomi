@@ -5,7 +5,11 @@
       <el-header class="header">
         <p>
           Sort by :
-          <span style="color:red">Default</span>
+          <span style="color:red" v-show="login" @click="deng">login</span>
+          <span style="color:red" v-show="!login" @click="tui">
+               hello{{ this.$store.state.user.user }}
+          </span>
+          <span style="marginRight:20px"><i class="el-icon-shopping-cart-2" @click="jump"></i></span>
           <span>
             Price
             <i :class="sort?'el-icon-bottom':'el-icon-top'" @click="sort = ! sort;"></i>
@@ -31,7 +35,7 @@
               <div>
                 <p>{{ item.productName }}</p>
                 <p style="color:red">￥{{ item.salePrice }}</p>
-                <el-button>加入购物车</el-button>
+                <el-button @click="forCart_shop(item)">加入购物车</el-button>
               </div>
             </li>
           </ul>
@@ -67,13 +71,19 @@ export default {
       //滚动加载的json数据数字
       num: 2,
       loading: true, //是否继续加载
-      loading1: false
+      loading1: false,
+      login:true,
+      na:""
     };
   },
   created() {},
   mounted() {
     this.goodsGet();
     window.addEventListener("scroll", this.mouseScroll);
+    if(this.$store.state.user != ""){
+         this.na = this.$store.state.user.name
+         this.login = false
+    }
   },
   methods: {
     goodsGet() {
@@ -105,6 +115,24 @@ export default {
           this.loading1 = false
         });
       }, 1000);
+    },
+    jump(){    //加入购物车
+      this.$router.push('/cart')
+    },
+    forCart_shop(item){
+        if(this.login){
+          alert('请登录')
+          return false;
+        }
+        this.$store.commit('forCart',item)
+    },
+    deng(){
+      this.login = false
+      this.$store.commit('login',{user:"徐海峰",token:"152323200102220015"})
+    },
+    tui(){
+       this.login = true
+       this.$store.commit('tui')
     }
   },
   computed: {
